@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid System practise no 1</title>
+  </head>
+  <style>
+    .container {
+      width: 1000px;
+      margin: 50px auto;
+      border: 1px solid gray;
+      background-color: #ccc;
+      display: grid;
+      /* grid-template-rows: 150px 150px; */
+      /* grid-template-columns: 150px 150px 150px; */
+      grid-template-rows: repeat(2, 150px);
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 10px;
+    }
+    .item {
+      font-size: 2rem;
+      color: white;
+      font-family: sans-serif;
+    }
+    .item--1 {
+      background-color: red;
+      grid-area: 2/2/3/3;
+    }
+    .item--2 {
+      background-color: orange;
+    }
+    .item--3 {
+      background-color: blue;
+    }
+    .item--4 {
+      background-color: green;
+    }
+    .item--5 {
+      background-color: purple;
+    }
+    .item--6 {
+      background-color: yellowgreen;
+      grid-area: 1/2/2/3;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item--1">1: Red</div>
+      <div class="item item--2">2: orange</div>
+      <div class="item item--3">3: blue</div>
+      <div class="item item--4">4: green</div>
+      <div class="item item--5">5: purple</div>
+      <div class="item item--6">6: yellow</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise no 2</title>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid red;
+        flex-wrap: wrap;
+        height: 50vh;
+        width: 50vw;
+        /* align-items: center; */
+        justify-content: center;
+        align-content: space-evenly;
+      }
+      .flex {
+        flex-basis: 20rem;
+        /* flex-grow: 1; */
+        width: 2rem;
+        height: 2rem;
+      }
+      #red {
+        background-color: red;
+        order: 5;
+      }
+      #blue {
+        background-color: blue;
+        order: 2;
+      }
+      #green {
+        background-color: green;
+        order: 2;
+      }
+      #yellow {
+        background-color: yellow;
+        order: 2;
+      }
+      #orange {
+        background-color: orange;
+        order: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex" id="red">1</div>
+      <div class="flex" id="blue">2</div>
+      <div class="flex" id="green">3</div>
+      <div class="flex" id="yellow">4</div>
+      <div class="flex" id="orange">5</div>
+    </div>
+  </body>
+</html>

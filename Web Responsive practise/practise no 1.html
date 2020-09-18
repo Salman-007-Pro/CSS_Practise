@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive website practise no 1</title>
+    <style>
+      .red {
+        display: block;
+        background-color: red;
+        width: 1250px;
+        height: 200px;
+      }
+      @media (min-width: 1250px) {
+        .red{
+            background-color: blueviolet;
+        }
+    }
+      @media (max-width: 1200px) {
+        .red {
+          background-color: black;
+        }
+      }
+      @media (max-width: 900px) {
+        .red {
+          background-color: orange;
+        }
+      }
+      @media (max-width: 600px) {
+        .red {
+          background-color: yellow;
+        }
+        @media (max-width: 300px) {
+          .red {
+            background-color: blue;
+          }
+        }
+      }
+      .img{
+        background-color: red;
+        width: 200px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive website practise no 1</h1>
+    <div class="red">
+      redasds
+    </div>
+    <div class="img" >
+    <img src="icon-3.svg"/>
+    asdasdsdasd
+  </div>
+  </body>
+</html>
